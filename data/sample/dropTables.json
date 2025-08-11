@@ -1,0 +1,25 @@
+[
+  {
+    "entrees": [
+      {
+        "qty": [
+          1,
+          1
+        ],
+        "poids": 10,
+        "ref": "rust_sword",
+        "type": "objet"
+      },
+      {
+        "qty": [
+          5,
+          15
+        ],
+        "poids": 90,
+        "ref": "or",
+        "type": "currency"
+      }
+    ],
+    "id": "lt_t1"
+  }
+]

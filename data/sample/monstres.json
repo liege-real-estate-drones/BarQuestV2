@@ -1,0 +1,25 @@
+[
+  {
+    "competences": [],
+    "famille": "bête",
+    "id": "boar",
+    "nom": "Sanglier",
+    "level": 1,
+    "lootTableId": "lt_t1",
+    "niveau": 1,
+    "stats": {
+      "Armure": 5,
+      "AttMax": 6,
+      "AttMin": 3,
+      "CritDmg": 1.4,
+      "CritPct": 0.05,
+      "Esquive": 0.02,
+      "PV": 60,
+      "Precision": 0.85,
+      "ResElems": {
+        "feu": 0
+      },
+      "Vitesse": 0.9
+    }
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Talent",
+  "description": "Schema for a player talent or skill.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the talent."
+    },
+    "nom": {
+      "type": "string"
+    },
+    "rangMax": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The maximum number of points that can be allocated to this talent."
+    },
+    "effets": {
+      "type": "array",
+      "description": "The effects this talent provides.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stat": {
+            "type": "string",
+            "description": "The stat or custom effect key to modify."
+          },
+          "parRang": {
+            "type": "number",
+            "description": "The value gained per rank in this talent."
+          }
+        },
+        "required": ["stat", "parRang"]
+      }
+    },
+    "exigences": {
+      "type": "object",
+      "description": "The requirements to learn this talent.",
+      "properties": {
+        "classeId": {
+          "type": "string",
+          "description": "Optional class ID required to learn this talent."
+        },
+        "prerequis": {
+          "type": "array",
+          "description": "List of talent IDs required before this one can be learned.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": ["prerequis"]
+    }
+  },
+  "required": ["id", "nom", "rangMax", "effets", "exigences"]
+}

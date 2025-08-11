@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Equilibrage",
+  "description": "Schema for game-wide balancing parameters and formulas.",
+  "type": "object",
+  "properties": {
+    "formules": {
+      "type": "object",
+      "description": "String representations of core combat formulas.",
+      "properties": {
+        "TTNH": { "type": "string", "description": "Time To Next Hit formula." },
+        "Degats": { "type": "string", "description": "Damage calculation formula." },
+        "ReducArmure": { "type": "string", "description": "Armor reduction formula." },
+        "HitChance": { "type": "string", "description": "Hit chance formula." }
+      },
+      "required": ["TTNH", "Degats", "ReducArmure", "HitChance"]
+    },
+    "params": {
+      "type": "object",
+      "description": "Numeric parameters used in formulas.",
+      "properties": {
+        "BaseDelay": { "type": "number", "description": "Base delay for attacks." },
+        "k": { "type": "number", "description": "A constant for the armor formula." },
+        "hitSlope": { "type": "number", "description": "A parameter for the hit chance sigmoid." }
+      },
+      "required": ["BaseDelay", "k"]
+    }
+  },
+  "required": ["formules", "params"]
+}

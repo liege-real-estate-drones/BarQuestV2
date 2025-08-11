@@ -1,0 +1,12 @@
+[
+  {
+    "bossId": null,
+    "id": "forest_t1",
+    "modificateurs": [],
+    "palier": 1,
+    "poidsMod": 0,
+    "tablesLoot": [
+      "lt_t1"
+    ]
+  }
+]

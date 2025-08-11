@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Classe",
+  "description": "Schema for a player character class.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "ressource": {
+      "enum": ["Mana", "Énergie", "Rage"]
+    },
+    "archétype": {
+      "enum": ["Mêlée", "Distance", "Magie", "Soutien"]
+    },
+    "statsBase": {
+      "$ref": "stats.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "nom",
+    "ressource",
+    "archétype",
+    "statsBase"
+  ]
+}

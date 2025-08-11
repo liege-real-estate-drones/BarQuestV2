@@ -1,0 +1,21 @@
+[
+  {
+    "effets": [
+      {
+        "parRang": 0.05,
+        "stat": "Vitesse"
+      },
+      {
+        "parRang": 0.03,
+        "stat": "CritPct"
+      }
+    ],
+    "exigences": {
+      "classeId": "war",
+      "prerequis": []
+    },
+    "id": "war_t1",
+    "nom": "Frénésie",
+    "rangMax": 3
+  }
+]

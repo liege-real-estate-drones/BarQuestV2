@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Monstre",
+  "description": "Schema for a monster in the game.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the monster."
+    },
+    "nom": {
+      "type": "string",
+      "description": "The display name of the monster."
+    },
+    "famille": {
+      "type": "string",
+      "description": "The family of the monster, e.g., 'bête', 'mort-vivant'."
+    },
+    "niveau": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The base level of the monster."
+    },
+    "stats": {
+      "$ref": "stats.schema.json",
+      "description": "The base statistics of the monster."
+    },
+    "compétences": {
+      "type": "array",
+      "description": "List of skills or abilities the monster can use.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "nom": { "type": "string" },
+          "mult": { "type": "number", "description": "Damage multiplier." },
+          "cd": { "type": "number", "description": "Cooldown in seconds." }
+        },
+        "required": ["id", "nom"]
+      }
+    },
+    "lootTableId": {
+      "type": "string",
+      "description": "The ID of the loot table to use when this monster is defeated."
+    }
+  },
+  "required": [
+    "id",
+    "nom",
+    "famille",
+    "niveau",
+    "stats",
+    "compétences",
+    "lootTableId"
+  ]
+}

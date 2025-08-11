@@ -1,0 +1,18 @@
+[
+  {
+    "affixes": [
+      {
+        "ref": "p_att",
+        "type": "prefix",
+        "val": 3
+      }
+    ],
+    "id": "rust_sword",
+    "niveauMin": 1,
+    "rareté": "Commun",
+    "slot": "Main",
+    "tagsClasse": [
+      "war"
+    ]
+  }
+]

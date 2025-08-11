@@ -1,0 +1,74 @@
+====================================
+  Running BarQuest Combat Simulator
+====================================
+
+--- Starting Combat Simulation (Seed: 42) ---
+Combat finished after 7.20 seconds.
+🏆 Winner: Guerrier (HP: 91/120)
+
+--- Combat Log ---
+[T+800ms]    Guerrier hits Sanglier for 5 damage.
+[T+850ms]    💥 CRITICAL! Sanglier critically hits Guerrier for 4 damage.
+[T+1600ms]   Guerrier hits Sanglier for 5 damage.
+[T+1700ms]   Sanglier hits Guerrier for 4 damage.
+[T+2400ms]   Guerrier hits Sanglier for 9 damage.
+[T+2550ms]   Sanglier hits Guerrier for 2 damage.
+[T+3200ms]   Guerrier hits Sanglier for 9 damage.
+[T+3400ms]   Sanglier hits Guerrier for 4 damage.
+[T+4000ms]   Guerrier hits Sanglier for 9 damage.
+[T+4250ms]   Sanglier hits Guerrier for 3 damage.
+[T+4800ms]   Guerrier hits Sanglier for 7 damage.
+[T+5100ms]   Sanglier hits Guerrier for 4 damage.
+[T+5600ms]   Guerrier hits Sanglier for 8 damage.
+[T+5900ms]   Sanglier hits Guerrier for 4 damage.
+[T+6400ms]   Guerrier hits Sanglier for 5 damage.
+[T+6750ms]   Sanglier hits Guerrier for 4 damage.
+[T+7200ms]   Guerrier hits Sanglier for 6 damage.
+
+--- Starting Combat Simulation (Seed: 1337) ---
+Combat finished after 7.20 seconds.
+🏆 Winner: Guerrier (HP: 94/120)
+
+--- Combat Log ---
+[T+800ms]    Guerrier hits Sanglier for 7 damage.
+[T+850ms]    Sanglier hits Guerrier for 3 damage.
+[T+1600ms]   Guerrier hits Sanglier for 7 damage.
+[T+1700ms]   Sanglier hits Guerrier for 3 damage.
+[T+2400ms]   Guerrier hits Sanglier for 7 damage.
+[T+2550ms]   Sanglier hits Guerrier for 3 damage.
+[T+3200ms]   Guerrier hits Sanglier for 6 damage.
+[T+3400ms]   Sanglier hits Guerrier for 4 damage.
+[T+4000ms]   Guerrier hits Sanglier for 9 damage.
+[T+4250ms]   Sanglier hits Guerrier for 2 damage.
+[T+4800ms]   Guerrier hits Sanglier for 7 damage.
+[T+5100ms]   Sanglier hits Guerrier for 3 damage.
+[T+5600ms]   Guerrier hits Sanglier for 5 damage.
+[T+5900ms]   Sanglier hits Guerrier for 4 damage.
+[T+6400ms]   Guerrier hits Sanglier for 9 damage.
+[T+6750ms]   Sanglier hits Guerrier for 4 damage.
+[T+7200ms]   Guerrier hits Sanglier for 9 damage.
+
+--- Starting Combat Simulation (Seed: 9001) ---
+Combat finished after 7.20 seconds.
+🏆 Winner: Guerrier (HP: 96/120)
+
+--- Combat Log ---
+[T+800ms]    Guerrier hits Sanglier for 8 damage.
+[T+850ms]    Sanglier hits Guerrier for 2 damage.
+[T+1600ms]   Guerrier hits Sanglier for 9 damage.
+[T+1700ms]   Sanglier hits Guerrier for 4 damage.
+[T+2400ms]   Guerrier hits Sanglier for 5 damage.
+[T+2550ms]   Sanglier hits Guerrier for 2 damage.
+[T+3200ms]   Guerrier hits Sanglier for 7 damage.
+[T+3400ms]   Sanglier hits Guerrier for 2 damage.
+[T+4000ms]   Guerrier hits Sanglier for 5 damage.
+[T+4250ms]   Sanglier hits Guerrier for 4 damage.
+[T+4800ms]   Guerrier hits Sanglier for 6 damage.
+[T+5100ms]   Sanglier hits Guerrier for 4 damage.
+[T+5600ms]   Guerrier hits Sanglier for 5 damage.
+[T+5900ms]   Sanglier hits Guerrier for 3 damage.
+[T+6400ms]   💥 CRITICAL! Guerrier critically hits Sanglier for 11 damage.
+[T+6750ms]   Sanglier hits Guerrier for 3 damage.
+[T+7200ms]   Guerrier hits Sanglier for 8 damage.
+
+...All simulations complete.

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stats",
+  "description": "Schema for a reusable actor statistics block.",
+  "type": "object",
+  "properties": {
+    "PV": {
+      "description": "Health Points",
+      "type": "integer",
+      "minimum": 1
+    },
+    "RessourceMax": {
+      "description": "Max resource (Mana, Energy, etc.)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "AttMin": {
+      "description": "Minimum attack damage",
+      "type": "number"
+    },
+    "AttMax": {
+      "description": "Maximum attack damage",
+      "type": "number"
+    },
+    "CritPct": {
+      "description": "Critical hit chance (e.g., 0.05 for 5%)",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "CritDmg": {
+      "description": "Critical hit damage multiplier (e.g., 1.5 for 150%)",
+      "type": "number",
+      "minimum": 1
+    },
+    "Armure": {
+      "description": "Armor value for physical damage reduction",
+      "type": "number"
+    },
+    "ResElems": {
+      "description": "Elemental resistances",
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_]+$": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "Vitesse": {
+      "description": "Attack or action speed",
+      "type": "number",
+      "minimum": 0
+    },
+    "Precision": {
+      "description": "Accuracy rating, influences hit chance",
+      "type": "number"
+    },
+    "Esquive": {
+      "description": "Dodge rating, influences chance to be missed",
+      "type": "number"
+    }
+  },
+  "required": [
+    "PV",
+    "AttMin",
+    "AttMax",
+    "CritPct",
+    "CritDmg",
+    "Armure",
+    "Vitesse",
+    "Precision",
+    "Esquive"
+  ],
+  "if": {
+    "properties": { "AttMin": { "type": "number" }, "AttMax": { "type": "number" } }
+  },
+  "then": {
+    "properties": {
+      "AttMax": { "minimum": { "$data": "1/AttMin" } }
+    }
+  }
+}

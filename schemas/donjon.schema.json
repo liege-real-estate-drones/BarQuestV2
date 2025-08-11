@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Donjon",
+  "description": "Schema for a dungeon, area, or level.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the dungeon."
+    },
+    "palier": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The tier or difficulty level of the dungeon."
+    },
+    "modificateurs": {
+      "type": "array",
+      "description": "List of modifier IDs applied to this dungeon.",
+      "items": { "type": "string" }
+    },
+    "poidsMod": {
+      "type": "number",
+      "description": "Weight for modifier rolling."
+    },
+    "bossId": {
+      "type": ["string", "null"],
+      "description": "The ID of the boss monster for this dungeon, if any."
+    },
+    "tablesLoot": {
+      "type": "array",
+      "description": "List of loot table IDs active in this dungeon.",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "id",
+    "palier",
+    "modificateurs",
+    "poidsMod",
+    "tablesLoot"
+  ]
+}

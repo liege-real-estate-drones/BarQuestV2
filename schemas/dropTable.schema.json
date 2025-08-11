@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DropTable",
+  "description": "Schema for a loot drop table.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the drop table."
+    },
+    "entrées": {
+      "type": "array",
+      "description": "List of possible drops from this table.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": {
+            "type": "string",
+            "description": "Reference ID to the item, currency, or set."
+          },
+          "type": {
+            "enum": ["objet", "currency", "set"],
+            "description": "The type of the drop."
+          },
+          "poids": {
+            "type": "number",
+            "minimum": 0,
+            "description": "The weight of this entry for drop calculation."
+          },
+          "qty": {
+            "type": "array",
+            "description": "The quantity range [min, max].",
+            "items": [{ "type": "integer" }, { "type": "integer" }],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "required": ["ref", "type", "poids", "qty"]
+      }
+    }
+  },
+  "required": ["id", "entrées"]
+}

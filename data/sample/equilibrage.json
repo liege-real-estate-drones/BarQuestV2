@@ -1,0 +1,12 @@
+{
+  "formules": {
+    "Degats": "roll(AttMin..AttMax)*(1+CritPct*(CritDmg-1))*Mults",
+    "HitChance": "sigmoid(Precision-Esquive)",
+    "ReducArmure": "dmg*(1-Armure/(Armure+k*niveau))",
+    "TTNH": "max(0.4, BaseDelay/(1+Hate))"
+  },
+  "params": {
+    "BaseDelay": 1.6,
+    "k": 50.0
+  }
+}

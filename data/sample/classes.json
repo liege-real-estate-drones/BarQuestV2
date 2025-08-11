@@ -1,0 +1,25 @@
+[
+  {
+    "archétype": "Mêlée",
+    "id": "war",
+    "nom": "Guerrier",
+    "ressource": "Rage",
+    "statsBase": {
+      "Armure": 20,
+      "AttMax": 10,
+      "AttMin": 6,
+      "CritDmg": 1.5,
+      "CritPct": 0.1,
+      "Esquive": 0.05,
+      "PV": 120,
+      "Precision": 0.9,
+      "ResElems": {
+        "feu": 0,
+        "glace": 0,
+        "foudre": 0
+      },
+      "RessourceMax": 100,
+      "Vitesse": 1.0
+    }
+  }
+]

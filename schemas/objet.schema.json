@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Objet",
+  "description": "Schema for an equippable item in the game.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the item."
+    },
+    "slot": {
+      "type": "string",
+      "description": "The equipment slot, e.g., 'Main', 'Tête', 'Torse'."
+    },
+    "rareté": {
+      "enum": ["Commun", "Rare", "Épique", "Légendaire"],
+      "description": "The rarity level of the item."
+    },
+    "niveauMin": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Minimum level required to equip the item."
+    },
+    "affixes": {
+      "type": "array",
+      "description": "List of affixes present on the item.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": {
+            "type": "string",
+            "description": "The ID of the affix definition."
+          },
+          "type": {
+            "enum": ["prefix", "suffix"],
+            "description": "The type of the affix."
+          },
+          "val": {
+            "type": "number",
+            "description": "The rolled value of the affix. Optional if calculated at runtime."
+          }
+        },
+        "required": ["ref", "type"]
+      }
+    },
+    "tagsClasse": {
+      "type": "array",
+      "description": "Optional list of class IDs that can use this item.",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "slot",
+    "rareté",
+    "niveauMin",
+    "affixes"
+  ]
+}

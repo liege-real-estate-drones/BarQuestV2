@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Affixe",
+  "description": "Schema for an item affix definition.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$",
+      "description": "Unique identifier for the affix."
+    },
+    "type": {
+      "enum": ["prefix", "suffix"],
+      "description": "Whether the affix is a prefix or a suffix."
+    },
+    "portée": {
+      "type": "array",
+      "description": "The range of values [min, max] the affix can roll.",
+      "items": [{ "type": "number" }, { "type": "number" }],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "échelonnage": {
+      "enum": ["lin", "exp", "palier"],
+      "description": "The scaling type of the affix: linear, exponential, or by tier."
+    }
+  },
+  "required": ["id", "type", "portée", "échelonnage"]
+}
