@@ -1,5 +1,5 @@
-import { EventBus } from './eventBus';
-import { CombatEvent } from './types';
+import { EventBus } from './eventBus.js';
+import { CombatEvent } from './types.js';
 
 /**
  * Defines the mapping between event names and their payload types for the entire game.

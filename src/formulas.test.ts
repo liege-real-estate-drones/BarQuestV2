@@ -5,9 +5,9 @@ import {
   calculateHitChance,
   calculateHitDamage,
   rollDamage,
-} from './formulas';
-import { SeededRNG } from './seededRng';
-import { Stats } from './types';
+} from './formulas.js';
+import { SeededRNG } from './seededRng.js';
+import { Stats } from './types.js';
 
 describe('Combat Formulas', () => {
   describe('calculateTTNH', () => {

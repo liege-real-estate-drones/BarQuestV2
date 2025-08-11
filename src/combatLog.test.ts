@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { CombatLog } from './combatLog';
-import { gameEventBus } from './events';
-import { CombatEvent } from './types';
+import { CombatLog } from './combatLog.js';
+import { gameEventBus } from './events.js';
+import { CombatEvent } from './types.js';
 
 describe('CombatLog', () => {
   let combatLog: CombatLog;

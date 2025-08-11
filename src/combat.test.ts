@@ -1,8 +1,8 @@
 import { describe, it, expect, vi, afterEach } from 'vitest';
-import { Combat } from './combat';
-import { Actor } from './actor';
-import { Stats } from './types';
-import { gameEventBus, GameEventPayloads } from './events';
+import { Combat } from './combat.js';
+import { Actor } from './actor.js';
+import { Stats } from './types.js';
+import { gameEventBus, GameEventPayloads } from './events.js';
 
 describe('Combat Engine', () => {
   // Define some standard stats for a player and a monster for testing.

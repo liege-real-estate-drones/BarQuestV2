@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { DataLoader } from './dataLoader';
-import { Actor } from './actor';
-import { Combat } from './combat';
-import { CombatLog } from './combatLog';
-import { CombatEvent } from './types';
+import { DataLoader } from './dataLoader.js';
+import { Actor } from './actor.js';
+import { Combat } from './combat.js';
+import { CombatLog } from './combatLog.js';
+import { CombatEvent } from './types.js';
 import fs from 'fs/promises';
 
 // This test file is a workaround to execute the main simulation logic

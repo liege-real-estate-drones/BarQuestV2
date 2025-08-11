@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { scaleMonsterHP, generateMonsterStats, generateBossStats } from './scaling';
+import { scaleMonsterHP, generateMonsterStats, generateBossStats } from './scaling.js';
 
 describe('Stat Scaling Formulas', () => {
   describe('scaleMonsterHP', () => {

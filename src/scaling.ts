@@ -1,4 +1,4 @@
-import { Stats } from './types';
+import { Stats } from './types.js';
 
 /**
  * This module contains functions for scaling game entities, particularly monsters,

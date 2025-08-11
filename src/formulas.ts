@@ -1,5 +1,5 @@
-import { Stats } from './types';
-import { SeededRNG } from './seededRng';
+import { Stats } from './types.js';
+import { SeededRNG } from './seededRng.js';
 
 /**
  * This module centralizes all core combat and character calculations for the game,

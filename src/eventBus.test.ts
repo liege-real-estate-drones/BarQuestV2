@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { EventBus } from './eventBus';
+import { EventBus } from './eventBus.js';
 
 describe('EventBus', () => {
   // Define a type map for the events used in tests.

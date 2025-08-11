@@ -1,4 +1,4 @@
-import { Stats } from './types';
+import { Stats } from './types.js';
 
 /**
  * Defines the template for a status effect (e.g., a buff or a debuff).

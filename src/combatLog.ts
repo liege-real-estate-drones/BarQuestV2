@@ -1,5 +1,5 @@
-import { gameEventBus } from './events';
-import { CombatEvent } from './types';
+import { gameEventBus } from './events.js';
+import { CombatEvent } from './types.js';
 
 /**
  * A logger class that subscribes to the global game event bus to record

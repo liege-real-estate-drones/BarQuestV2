@@ -1,5 +1,5 @@
-import { Stats } from './types';
-import { Effect, ActiveEffect } from './effects';
+import { Stats } from './types.js';
+import { Effect, ActiveEffect } from './effects.js';
 // import { v4 as uuidv4 } from 'uuid';
 
 /**
@@ -99,7 +99,7 @@ export class Actor {
     for (const activeEffect of this.activeEffects) {
       if (activeEffect.effect.statModifiers) {
         for (const [stat, value] of Object.entries(activeEffect.effect.statModifiers)) {
-          if (value !== undefined) {
+          if (typeof value === 'number') {
             (newStats as any)[stat] = ((newStats as any)[stat] || 0) + value;
           }
         }
@@ -110,7 +110,7 @@ export class Actor {
     for (const activeEffect of this.activeEffects) {
       if (activeEffect.effect.statMultipliers) {
         for (const [stat, value] of Object.entries(activeEffect.effect.statMultipliers)) {
-          if (value !== undefined) {
+          if (typeof value === 'number') {
             (newStats as any)[stat] = Math.round(((newStats as any)[stat] || 0) * value);
           }
         }

@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/typescript/bin/tsc",
+    "build": "npx tsc",
     "test": "npx vitest --reporter=verbose",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts"
+    "format": "prettier --write src/**/*.ts",
+    "start": "npm run build && node dist/index.js"
   },
   "repository": {
     "type": "git",

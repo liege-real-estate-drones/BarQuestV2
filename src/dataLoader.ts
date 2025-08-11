@@ -4,7 +4,7 @@ import path from 'path';
 // import addFormats from 'ajv-formats';
 
 // Import all the types to be used in the GameData interface
-import * as T from './types';
+import * as T from './types.js';
 
 /**
  * A structure to hold all the indexed game data for easy access.

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import { Actor } from './actor';
-import { Stats } from './types';
-import { Effect } from './effects';
+import { Actor } from './actor.js';
+import { Stats } from './types.js';
+import { Effect } from './effects.js';
 
 describe('Actor', () => {
   const baseStats: Stats = {

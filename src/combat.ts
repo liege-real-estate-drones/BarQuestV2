@@ -1,7 +1,7 @@
-import { Actor } from './actor';
-import { SeededRNG } from './seededRng';
-import * as Formulas from './formulas';
-import { gameEventBus } from './events';
+import { Actor } from './actor.js';
+import { SeededRNG } from './seededRng.js';
+import * as Formulas from './formulas.js';
+import { gameEventBus } from './events.js';
 
 /**
  * Represents the state of an actor within a single combat instance.
@@ -55,7 +55,7 @@ export class Combat {
     this.player.progress += deltaTime / playerTTNH;
     this.monster.progress += deltaTime / monsterTTNH;
 
-    // Check if the player can act.
+    // Check if the.player can act.
     if (this.player.progress >= 1.0) {
       this.player.progress -= 1.0;
       this.performAttack(this.player.actor, this.monster.actor);
